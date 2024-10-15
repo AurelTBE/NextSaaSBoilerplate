@@ -1,11 +1,12 @@
 'use client'
 
+import Link from 'next/link';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { Button } from "@/components/ui/button";
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -30,8 +31,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.privacyPolicy')}</a></li>
-              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.termsOfService')}</a></li>
+              <li>
+                <Link href={`/${language}/privacy`} className="hover:text-electric-blue transition-colors">
+                  {t('footer.privacyPolicy')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${language}/terms`} className="hover:text-electric-blue transition-colors">
+                  {t('footer.termsOfService')}
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="space-y-4">

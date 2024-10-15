@@ -9,8 +9,7 @@ const LanguageSelector: React.FC = () => {
 
   const languageNames = {
     en: 'English',
-    fr: 'Français',
-    es: 'Español'
+    fr: 'Français'
   };
 
   return (

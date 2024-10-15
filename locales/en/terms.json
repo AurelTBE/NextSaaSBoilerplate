@@ -1,0 +1,92 @@
+{
+  "title": "Terms of Service",
+  "effectiveDate": "Effective Date: [Insert Date]",
+  "introduction": {
+    "title": "Introduction",
+    "content": "Welcome to SaaSify. These Terms of Service (\"Terms\") govern your use of our website and services. By accessing or using our services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our services."
+  },
+  "accountRegistration": {
+    "title": "Account Registration",
+    "eligibility": {
+      "title": "Eligibility",
+      "content": "You must be at least 18 years old to use our services. By registering, you represent and warrant that you meet this age requirement."
+    },
+    "accountInfo": {
+      "title": "Account Information",
+      "content": "You agree to provide accurate and complete information when creating an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account."
+    },
+    "accountSecurity": {
+      "title": "Account Security",
+      "content": "You must notify us immediately of any unauthorized use of your account or any other breach of security."
+    }
+  },
+  "useOfServices": {
+    "title": "Use of Services",
+    "license": {
+      "title": "License",
+      "content": "We grant you a limited, non-exclusive, non-transferable license to access and use our services for your personal or business purposes, subject to these Terms."
+    },
+    "prohibitedActivities": {
+      "title": "Prohibited Activities",
+      "content": "You agree not to:",
+      "item1": "Use our services for any illegal or unauthorized purpose.",
+      "item2": "Interfere with or disrupt the integrity or performance of our services.",
+      "item3": "Attempt to gain unauthorized access to our services or related systems."
+    }
+  },
+  "paymentAndSubscription": {
+    "title": "Payment and Subscription",
+    "billing": {
+      "title": "Billing",
+      "content": "Payment for services is processed through Stripe. By subscribing to a plan, you agree to pay the applicable fees and taxes."
+    },
+    "subscriptionPlans": {
+      "title": "Subscription Plans",
+      "content": "We offer various subscription plans. Details of each plan, including pricing and features, are available on our website."
+    },
+    "cancellation": {
+      "title": "Cancellation",
+      "content": "You may cancel your subscription at any time. Upon cancellation, you will continue to have access to the services until the end of your billing period."
+    }
+  },
+  "intellectualProperty": {
+    "title": "Intellectual Property",
+    "ownership": {
+      "title": "Ownership",
+      "content": "All content, features, and functionality of our services are and will remain the exclusive property of SaaSify and its licensors."
+    },
+    "trademarks": {
+      "title": "Trademarks",
+      "content": "The SaaSify name and logo are trademarks of SaaSify. You may not use them without our prior written permission."
+    }
+  },
+  "limitationOfLiability": {
+    "title": "Limitation of Liability",
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "Our services are provided \"as is\" and \"as available\" without any warranties of any kind, either express or implied."
+    },
+    "limitation": {
+      "title": "Limitation",
+      "content": "In no event shall SaaSify, its directors, employees, or agents be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of our services."
+    }
+  },
+  "indemnification": {
+    "title": "Indemnification",
+    "content": "You agree to indemnify and hold SaaSify harmless from any claims, losses, liabilities, damages, costs, or expenses (including reasonable attorneys' fees) arising out of or related to your use of our services or violation of these Terms."
+  },
+  "changes": {
+    "title": "Changes to These Terms",
+    "content": "We reserve the right to modify these Terms at any time. We will notify you of any changes by posting the new Terms on our website. Your continued use of the services after any such changes constitutes your acceptance of the new Terms."
+  },
+  "governingLaw": {
+    "title": "Governing Law",
+    "content": "These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law principles."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "content": "If you have any questions about these Terms, please contact us at:",
+    "email": "Email",
+    "address": "Address"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "title": "Conditions d'Utilisation",
+  "effectiveDate": "Date d'entrée en vigueur : [Insérer la date]",
+  "introduction": {
+    "title": "Introduction",
+    "content": "Bienvenue sur SaaSify. Ces Conditions d'Utilisation (\"Conditions\") régissent votre utilisation de notre site web et de nos services. En accédant à nos services ou en les utilisant, vous acceptez d'être lié par ces Conditions. Si vous n'acceptez pas ces Conditions, veuillez ne pas utiliser nos services."
+  },
+  "accountRegistration": {
+    "title": "Inscription au Compte",
+    "eligibility": {
+      "title": "Éligibilité",
+      "content": "Vous devez avoir au moins 18 ans pour utiliser nos services. En vous inscrivant, vous déclarez et garantissez que vous remplissez cette condition d'âge."
+    },
+    "accountInfo": {
+      "title": "Informations du Compte",
+      "content": "Vous acceptez de fournir des informations exactes et complètes lors de la création d'un compte. Vous êtes responsable du maintien de la confidentialité de vos identifiants de compte et de toutes les activités qui se produisent sous votre compte."
+    },
+    "accountSecurity": {
+      "title": "Sécurité du Compte",
+      "content": "Vous devez nous informer immédiatement de toute utilisation non autorisée de votre compte ou de toute autre violation de sécurité."
+    }
+  },
+  "useOfServices": {
+    "title": "Utilisation des Services",
+    "license": {
+      "title": "Licence",
+      "content": "Nous vous accordons une licence limitée, non exclusive et non transférable pour accéder et utiliser nos services à des fins personnelles ou professionnelles, sous réserve des présentes Conditions."
+    },
+    "prohibitedActivities": {
+      "title": "Activités Interdites",
+      "content": "Vous acceptez de ne pas :",
+      "item1": "Utiliser nos services à des fins illégales ou non autorisées.",
+      "item2": "Interférer avec ou perturber l'intégrité ou les performances de nos services.",
+      "item3": "Tenter d'accéder sans autorisation à nos services ou aux systèmes connexes."
+    }
+  },
+  "paymentAndSubscription": {
+    "title": "Paiement et Abonnement",
+    "billing": {
+      "title": "Facturation",
+      "content": "Le paiement des services est traité par Stripe. En vous abonnant à un plan, vous acceptez de payer les frais et taxes applicables."
+    },
+    "subscriptionPlans": {
+      "title": "Plans d'Abonnement",
+      "content": "Nous proposons divers plans d'abonnement. Les détails de chaque plan, y compris les tarifs et les fonctionnalités, sont disponibles sur notre site web."
+    },
+    "cancellation": {
+      "title": "Annulation",
+      "content": "Vous pouvez annuler votre abonnement à tout moment. Après l'annulation, vous continuerez à avoir accès aux services jusqu'à la fin de votre période de facturation."
+    }
+  },
+  "intellectualProperty": {
+    "title": "Propriété Intellectuelle",
+    "ownership": {
+      "title": "Propriété",
+      "content": "Tout le contenu, les fonctionnalités et les fonctions de nos services sont et resteront la propriété exclusive de SaaSify et de ses concédants."
+    },
+    "trademarks": {
+      "title": "Marques Déposées",
+      "content": "Le nom et le logo SaaSify sont des marques déposées de SaaSify. Vous ne pouvez pas les utiliser sans notre autorisation écrite préalable."
+    }
+  },
+  "limitationOfLiability": {
+    "title": "Limitation de Responsabilité",
+    "disclaimer": {
+      "title": "Avertissement",
+      "content": "Nos services sont fournis \"tels quels\" et \"selon disponibilité\" sans aucune garantie d'aucune sorte, expresse ou implicite."
+    },
+    "limitation": {
+      "title": "Limitation",
+      "content": "En aucun cas SaaSify, ses administrateurs, employés ou agents ne seront responsables de tout dommage indirect, accessoire, spécial, consécutif ou punitif, y compris, sans s'y limiter, la perte de profits, de données, d'utilisation, de clientèle ou d'autres pertes intangibles, résultant de votre utilisation de nos services."
+    }
+  },
+  "indemnification": {
+    "title": "Indemnisation",
+    "content": "Vous acceptez d'indemniser et de dégager SaaSify de toute responsabilité en cas de réclamations, pertes, responsabilités, dommages, coûts ou dépenses (y compris les honoraires d'avocat raisonnables) découlant de ou liés à votre utilisation de nos services ou à la violation de ces Conditions."
+  },
+  "changes": {
+    "title": "Modifications de ces Conditions",
+    "content": "Nous nous réservons le droit de modifier ces Conditions à tout moment. Nous vous informerons de tout changement en publiant les nouvelles Conditions sur notre site web. Votre utilisation continue des services après de tels changements constitue votre acceptation des nouvelles Conditions."
+  },
+  "governingLaw": {
+    "title": "Loi Applicable",
+    "content": "Ces Conditions seront régies et interprétées conformément aux lois de [Votre Juridiction], sans égard à ses principes de conflit de lois."
+  },
+  "contact": {
+    "title": "Nous Contacter",
+    "content": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à :",
+    "email": "Email",
+    "address": "Adresse"
+  }
+}

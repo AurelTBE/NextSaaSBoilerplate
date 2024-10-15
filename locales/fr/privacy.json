@@ -1,0 +1,59 @@
+{
+  "title": "Politique de Confidentialité",
+  "effectiveDate": "Date d'entrée en vigueur : [Insérer la date]",
+  "introduction": {
+    "title": "Introduction",
+    "content": "Bienvenue sur SaaSify. Nous nous engageons à protéger votre vie privée et à garantir que vos informations personnelles sont traitées de manière sûre et responsable. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez nos services."
+  },
+  "informationCollected": {
+    "title": "Informations que nous collectons",
+    "personal": {
+      "title": "Informations personnelles",
+      "content": "Lorsque vous vous inscrivez pour un compte, nous collectons les informations personnelles suivantes :",
+      "username": "Nom d'utilisateur",
+      "email": "Adresse e-mail"
+    },
+    "payment": {
+      "title": "Informations de paiement",
+      "content": "Nous utilisons Stripe pour traiter les paiements. Nous ne stockons pas et n'avons pas accès à vos informations de paiement. Veuillez consulter la politique de confidentialité de Stripe pour plus d'informations sur la manière dont vos données de paiement sont traitées."
+    },
+    "usage": {
+      "title": "Données d'utilisation",
+      "content": "Nous collectons des données analytiques anonymes pour nous aider à comprendre comment notre service est utilisé et pour améliorer notre plateforme. Ces données incluent des visites anonymes, des informations sur la façon dont vous interagissez avec notre site web, telles que les pages visitées et le temps passé sur chaque page."
+    },
+    "account": {
+      "title": "Données du compte",
+      "content": "Nous collectons des informations sur l'utilisation de votre compte, y compris les détails des plans et des crédits de votre abonnement à des fins statistiques et de gestion."
+    }
+  },
+  "dataUsage": {
+    "title": "Comment nous utilisons vos informations",
+    "content": "Nous utilisons les informations que nous collectons aux fins suivantes :",
+    "provide": "Pour fournir et maintenir notre service : Pour gérer votre compte et fournir les services que vous avez demandés.",
+    "communicate": "Pour communiquer avec vous : Pour vous envoyer des mises à jour, des newsletters et d'autres informations liées à votre compte.",
+    "improve": "Pour améliorer notre service : Pour analyser les modèles d'utilisation et améliorer la fonctionnalité et l'expérience utilisateur de notre plateforme.",
+    "security": "Pour assurer la sécurité : Pour surveiller et protéger la sécurité de nos services et de nos utilisateurs."
+  },
+  "dataSharing": {
+    "title": "Partage de vos informations",
+    "content": "Nous ne vendons ni ne louons vos informations personnelles à des tiers. Nous pouvons partager vos informations avec des fournisseurs de services (des fournisseurs tiers qui nous aident à fournir nos services, tels que la communication par e-mail et l'analyse) et pour des exigences légales (si requis par la loi ou en réponse à des demandes valides des autorités publiques)."
+  },
+  "dataSecurity": {
+    "title": "Sécurité des données",
+    "content": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles contre l'accès, l'utilisation ou la divulgation non autorisés. Cependant, aucune méthode de transmission sur Internet ou méthode de stockage électronique n'est sûre à 100%."
+  },
+  "userRights": {
+    "title": "Vos droits",
+    "content": "Vous avez le droit d'accéder à vos informations (demander une copie des informations personnelles que nous détenons à votre sujet), de corriger vos informations (demander des corrections à toute information inexacte ou incomplète) et de supprimer vos informations (demander la suppression de vos informations personnelles, sous réserve de certaines obligations légales)."
+  },
+  "changes": {
+    "title": "Modifications de cette politique de confidentialité",
+    "content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur notre site web. Il vous est conseillé de consulter périodiquement cette politique de confidentialité pour tout changement."
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "content": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, veuillez nous contacter à :",
+    "email": "E-mail",
+    "address": "Adresse"
+  }
+}
