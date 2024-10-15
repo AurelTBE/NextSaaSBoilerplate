@@ -1,0 +1,18 @@
+{
+  "company": "Empresa",
+  "about": "Acerca de",
+  "careers": "Carreras",
+  "contact": "Contacto",
+  "resources": "Recursos",
+  "documentation": "Documentación",
+  "blog": "Blog",
+  "support": "Soporte",
+  "legal": "Legal",
+  "privacyPolicy": "Política de Privacidad",
+  "termsOfService": "Términos de Servicio",
+  "subscribe": "Suscríbete",
+  "subscribeText": "Mantente actualizado con nuestras últimas características y lanzamientos.",
+  "emailPlaceholder": "Ingresa tu correo electrónico",
+  "subscribeButton": "Suscribirse",
+  "copyright": "© 2024 Tu Empresa. Todos los derechos reservados."
+}

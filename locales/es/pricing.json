@@ -1,0 +1,33 @@
+{
+  "title": "Planes y Precios",
+  "choosePlan": "Elegir Plan",
+  "starter": {
+    "name": "Plan Inicial",
+    "price": "29€/mes",
+    "features": [
+      "Soporte Básico",
+      "Hasta 100 Usuarios",
+      "Acceso a Funciones Básicas"
+    ]
+  },
+  "pro": {
+    "name": "Plan Pro",
+    "price": "79€/mes",
+    "features": [
+      "Soporte Prioritario",
+      "Hasta 1.000 Usuarios",
+      "Acceso a Funciones Avanzadas",
+      "Integraciones Personalizadas"
+    ]
+  },
+  "enterprise": {
+    "name": "Plan Empresarial",
+    "price": "Contacta para Precios",
+    "features": [
+      "Soporte Dedicado",
+      "Usuarios Ilimitados",
+      "Acceso Completo a Funciones",
+      "Opciones de Desarrollo Personalizado"
+    ]
+  }
+}

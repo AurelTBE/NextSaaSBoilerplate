@@ -18,6 +18,16 @@ import frAbout from './fr/about.json';
 import frContact from './fr/contact.json';
 import frFooter from './fr/footer.json';
 
+import esCommon from './es/common.json';
+import esHero from './es/hero.json';
+import esFeatures from './es/features.json';
+import esPricing from './es/pricing.json';
+import esTestimonials from './es/testimonials.json';
+import esCTA from './es/cta.json';
+import esAbout from './es/about.json';
+import esContact from './es/contact.json';
+import esFooter from './es/footer.json';
+
 export const translations = {
   en: {
     common: enCommon,
@@ -40,6 +50,17 @@ export const translations = {
     about: frAbout,
     contact: frContact,
     footer: frFooter,
+  },
+  es: {
+    common: esCommon,
+    hero: esHero,
+    features: esFeatures,
+    pricing: esPricing,
+    testimonials: esTestimonials,
+    cta: esCTA,
+    about: esAbout,
+    contact: esContact,
+    footer: esFooter,
   },
 };
 
