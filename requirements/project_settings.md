@@ -8,5 +8,6 @@ NextJS 14 with the following settings:
 √ Would you like to use App Router? (recommended) ...  Yes
 √ Would you like to customize the default import alias (@/*)? ... No
 
+For styling, use Tailwind CSS
 For UI, use Shadcn/UI
 For Icons, use react-icons
