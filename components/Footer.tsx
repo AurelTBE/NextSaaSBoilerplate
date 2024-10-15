@@ -1,51 +1,56 @@
+'use client'
+
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { Button } from "@/components/ui/button";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold mb-4">Company</h3>
+            <h3 className="text-xl font-semibold mb-4">{t('footer.company')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-electric-blue transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-electric-blue transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-electric-blue transition-colors">Contact</a></li>
+              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.about')}</a></li>
+              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.careers')}</a></li>
+              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.contact')}</a></li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold mb-4">Resources</h3>
+            <h3 className="text-xl font-semibold mb-4">{t('footer.resources')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-electric-blue transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-electric-blue transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-electric-blue transition-colors">Support</a></li>
+              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.documentation')}</a></li>
+              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.blog')}</a></li>
+              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.support')}</a></li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold mb-4">Legal</h3>
+            <h3 className="text-xl font-semibold mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-electric-blue transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-electric-blue transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.privacyPolicy')}</a></li>
+              <li><a href="#" className="hover:text-electric-blue transition-colors">{t('footer.termsOfService')}</a></li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold mb-4">Subscribe</h3>
-            <p className="mb-4">Stay updated with our latest features and releases.</p>
+            <h3 className="text-xl font-semibold mb-4">{t('footer.subscribe')}</h3>
+            <p className="mb-4">{t('footer.subscribeText')}</p>
             <form className="flex">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t('footer.emailPlaceholder') as string}
                 className="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-electric-blue"
               />
               <Button type="submit" className="bg-electric-blue hover:bg-blue-600 text-white rounded-r-md">
-                Subscribe
+                {t('footer.subscribeButton')}
               </Button>
             </form>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; 2024 Your Company. All rights reserved.</p>
+          <p>{t('footer.copyright')}</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">
               <FaGithub size={24} />

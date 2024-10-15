@@ -1,29 +1,34 @@
+'use client'
+
+import { useLanguage } from '../contexts/LanguageContext'
 import { FiLayers, FiShield, FiZap } from 'react-icons/fi';
 
-const features = [
-  {
-    icon: <FiLayers className="w-12 h-12 text-neon-green" />,
-    title: 'Scalable Architecture',
-    description: 'Built to grow with your business, handling millions of requests with ease.',
-  },
-  {
-    icon: <FiShield className="w-12 h-12 text-electric-blue" />,
-    title: 'Advanced Security',
-    description: 'State-of-the-art encryption and security measures to protect your data.',
-  },
-  {
-    icon: <FiZap className="w-12 h-12 text-vibrant-purple" />,
-    title: 'Lightning Fast',
-    description: 'Optimized for speed, delivering results in milliseconds.',
-  },
-];
-
 const Features = () => {
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      icon: <FiLayers className="w-12 h-12 text-neon-green" />,
+      title: t('features.scalable.title'),
+      description: t('features.scalable.description'),
+    },
+    {
+      icon: <FiShield className="w-12 h-12 text-electric-blue" />,
+      title: t('features.security.title'),
+      description: t('features.security.description'),
+    },
+    {
+      icon: <FiZap className="w-12 h-12 text-vibrant-purple" />,
+      title: t('features.speed.title'),
+      description: t('features.speed.description'),
+    },
+  ];
+
   return (
     <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-12">
-          Cutting-Edge Features
+          {t('features.heading')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {features.map((feature, index) => (

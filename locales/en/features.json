@@ -1,0 +1,15 @@
+{
+  "heading": "Cutting-Edge Features",
+  "scalable": {
+    "title": "Scalable Architecture",
+    "description": "Built to grow with your business, handling millions of requests with ease."
+  },
+  "security": {
+    "title": "Advanced Security",
+    "description": "State-of-the-art encryption and security measures to protect your data."
+  },
+  "speed": {
+    "title": "Lightning Fast",
+    "description": "Optimized for speed, delivering results in milliseconds."
+  }
+}

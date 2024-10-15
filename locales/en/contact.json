@@ -1,0 +1,10 @@
+{
+  "title": "Contact Us",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "submit": "Send Message",
+  "namePlaceholder": "Your Name",
+  "emailPlaceholder": "your@email.com",
+  "messagePlaceholder": "Your message here..."
+}

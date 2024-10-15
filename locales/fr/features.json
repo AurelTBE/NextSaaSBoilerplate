@@ -1,0 +1,15 @@
+{
+  "heading": "Fonctionnalités de Pointe",
+  "scalable": {
+    "title": "Architecture Évolutive",
+    "description": "Conçu pour évoluer avec votre entreprise, gérant des millions de requêtes avec facilité."
+  },
+  "security": {
+    "title": "Sécurité Avancée",
+    "description": "Mesures de sécurité et de cryptage de pointe pour protéger vos données."
+  },
+  "speed": {
+    "title": "Ultra Rapide",
+    "description": "Optimisé pour la vitesse, délivrant des résultats en millisecondes."
+  }
+}

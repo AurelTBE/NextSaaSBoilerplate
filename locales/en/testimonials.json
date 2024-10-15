@@ -1,0 +1,13 @@
+{
+  "heading": "What Our Customers Say",
+  "john": {
+    "name": "John Doe",
+    "title": "CEO of TechCorp",
+    "quote": "SaaSify transformed our development process. We launched in record time and our users love the performance."
+  },
+  "jane": {
+    "name": "Jane Smith",
+    "title": "CTO of Innovate Inc.",
+    "quote": "The flexibility and support we received were top-notch. Highly recommend for any SaaS startup."
+  }
+}

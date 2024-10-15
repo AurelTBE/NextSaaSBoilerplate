@@ -1,0 +1,33 @@
+{
+  "title": "Plans and Pricing",
+  "choosePlan": "Choose Plan",
+  "starter": {
+    "name": "Starter Plan",
+    "price": "$29/month",
+    "features": [
+      "Basic Support",
+      "Up to 100 Users",
+      "Core Features Access"
+    ]
+  },
+  "pro": {
+    "name": "Pro Plan",
+    "price": "$79/month",
+    "features": [
+      "Priority Support",
+      "Up to 1,000 Users",
+      "Advanced Features Access",
+      "Custom Integrations"
+    ]
+  },
+  "enterprise": {
+    "name": "Enterprise Plan",
+    "price": "Contact Us for Pricing",
+    "features": [
+      "Dedicated Support",
+      "Unlimited Users",
+      "Full Feature Access",
+      "Custom Development Options"
+    ]
+  }
+}
