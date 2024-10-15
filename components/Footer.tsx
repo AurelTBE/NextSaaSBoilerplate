@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; 2023 Your Company. All rights reserved.</p>
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">
               <FaGithub size={24} />
