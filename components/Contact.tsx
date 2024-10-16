@@ -5,9 +5,6 @@ import { useLanguage } from '../contexts/LanguageContext'
 const Contact = () => {
   const { t, language } = useLanguage();
 
-  console.log('Current language:', language); // Add this line
-  console.log('Name placeholder:', t('contact.namePlaceholder')); // Add this line
-
   return (
     <section id="contact" className="bg-gray-100 py-20">
       <div className="container mx-auto px-4">

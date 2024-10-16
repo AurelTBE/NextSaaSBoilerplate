@@ -26,12 +26,11 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode; initialLang
     } else {
       setLanguage(initialLang || defaultLanguage);
     }
-    console.log('LanguageProvider - Initial language set:', language);
   }, [initialLang]);
 
   const changeLanguage = (lang: Language) => {
     if (translations[lang]) {
-      console.log(`LanguageProvider - Changing language to: ${lang}`);
+
       setLanguage(lang);
       localStorage.setItem('language', lang);
       const newPathname = pathname.replace(/^\/[a-z]{2}/, `/${lang}`);
@@ -40,7 +39,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode; initialLang
   };
 
   const t = (key: string, options?: { returnObjects: boolean }): string | string[] => {
-    console.log(`LanguageProvider - Translating key: ${key}, Current language: ${language}`);
     const keys = key.split('.');
     let value: any = translations[language];
     for (const k of keys) {
@@ -51,7 +49,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode; initialLang
         return key; // Return the key if translation is not found
       }
     }
-    console.log(`LanguageProvider - Translation result:`, value);
+
     if (options?.returnObjects && Array.isArray(value)) {
       return value;
     }
