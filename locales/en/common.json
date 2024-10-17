@@ -7,5 +7,10 @@
   "privacy": "Privacy Policy",
   "languageSelector": "Language",
   "footer": "© 2024 SaaSify. All rights reserved.",
-  "siteName": "SaaSify"
+  "siteName": "SaaSify",
+  "signIn": "Sign In",
+  "signOut": "Sign Out",
+  "userMenu": "User Menu",
+  "profile": "Profile",
+  "settings": "Settings"
 }
