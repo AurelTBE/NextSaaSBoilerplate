@@ -1,26 +1,31 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-import { translations, Language } from './locales/translations'
+import { match } from '@formatjs/intl-localematcher'
+import Negotiator from 'negotiator'
 
-const defaultLocale: Language = 'en'
+// List of supported locales
+const locales = ['en', 'fr']
+const defaultLocale = 'en'
 
-function getLocale(request: NextRequest): Language {
-  const acceptLanguage = request.headers.get('accept-language')
+function getLocale(request: NextRequest): string {
+  const headers = new Headers(request.headers)
+  const acceptLanguage = headers.get('accept-language')
   if (acceptLanguage) {
-    const [browserLang] = acceptLanguage.split(',')
-    if (browserLang) {
-      const [language] = browserLang.split('-')
-      if (language in translations) {
-        return language as Language
-      }
-    }
+    headers.set('accept-language', acceptLanguage.replaceAll('_', '-'))
   }
-  return defaultLocale
+
+  const negotiatorHeaders: Record<string, string> = {}
+  headers.forEach((value, key) => (negotiatorHeaders[key] = value))
+
+  // @ts-ignore locales are readonly
+  const languages = new Negotiator({ headers: negotiatorHeaders }).languages()
+  
+  return match(languages, locales, defaultLocale)
 }
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
-  const pathnameIsMissingLocale = Object.keys(translations).every(
+  const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
 
