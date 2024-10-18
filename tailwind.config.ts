@@ -16,6 +16,22 @@ const config: Config = {
   			'electric-blue': '#007BFF',
   			'neon-green': '#39FF14',
   			'vibrant-purple': '#8A2BE2',
+			  light: {
+				backgroundPrimary: '#F5F5F5',
+				backgroundSecondary: '#FFFFFF',
+				primaryText: '#0A2540',
+				secondaryText: '#333333',
+				accent1: '#007BFF',
+				accent2: '#39FF14',
+			  },
+			  dark: {
+				backgroundPrimary: '#121212',
+				backgroundSecondary: '#1E1E1E',
+				primaryText: '#E0E0E0',
+				secondaryText: '#B0B0B0',
+				accent1: '#007BFF',
+				accent2: '#39FF14',
+			  },
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

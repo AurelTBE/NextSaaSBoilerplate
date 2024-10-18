@@ -70,12 +70,12 @@ const TopBar = () => {
           <Link href="#about" className="text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText">{t('common.about')}</Link>
           <Link href="#contact" className="text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText">{t('common.contact')}</Link>
           {isLoggedIn && (
-            <Link href={`/${language}/app`} className="bg-light-accent dark:bg-dark-accent text-white font-bold py-2 px-4 rounded hover:bg-light-highlight dark:hover:bg-dark-highlight">
+            <Link href={`/${language}/app`} className="text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText font-bold py-2 px-4 rounded hover:bg-light-highlight dark:hover:bg-dark-highlight">
               {t('common.application')}
             </Link>
           )}
           <LanguageSelector />
-          <Button onClick={toggleDarkMode} variant="outline" size="icon" className="bg-light-accent dark:bg-dark-accent text-white">
+          <Button onClick={toggleDarkMode} variant="outline" size="icon" className="bg-light-accent text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText">
             {isDarkMode ? (
               <Sun className="h-[1.2rem] w-[1.2rem]" />
             ) : (
@@ -86,7 +86,7 @@ const TopBar = () => {
           {!isLoggedIn ? (
             <button
               onClick={handleLogin}
-              className="bg-light-accent dark:bg-dark-accent text-white font-bold py-2 px-4 rounded hover:bg-light-highlight dark:hover:bg-dark-highlight"
+              className="text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText"
             >
               {t('common.signIn')}
             </button>
