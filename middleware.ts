@@ -1,44 +1,27 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-import { match } from '@formatjs/intl-localematcher'
-import Negotiator from 'negotiator'
-
-// List of supported locales
-const locales = ['en', 'fr']
-const defaultLocale = 'en'
-
-function getLocale(request: NextRequest): string {
-  const headers = new Headers(request.headers)
-  const acceptLanguage = headers.get('accept-language')
-  if (acceptLanguage) {
-    headers.set('accept-language', acceptLanguage.replaceAll('_', '-'))
-  }
-
-  const negotiatorHeaders: Record<string, string> = {}
-  headers.forEach((value, key) => (negotiatorHeaders[key] = value))
-
-  // @ts-ignore locales are readonly
-  const languages = new Negotiator({ headers: negotiatorHeaders }).languages()
-  
-  return match(languages, locales, defaultLocale)
-}
 
 export function middleware(request: NextRequest) {
+  const isLoggedIn = request.cookies.get('isLoggedIn')?.value === 'true'
   const pathname = request.nextUrl.pathname
-  const pathnameIsMissingLocale = locales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-  )
+  const locale = pathname.split('/')[1]
 
-  if (pathnameIsMissingLocale) {
-    const locale = getLocale(request)
-    return NextResponse.redirect(
-      new URL(`/${locale}${pathname}`, request.url)
-    )
+  // Allow access to home pages and other public routes
+  if (pathname === `/${locale}` || !pathname.includes('/app')) {
+    return NextResponse.next()
   }
+
+  // Check if the current route is the app route
+  if (pathname.includes('/app')) {
+    if (!isLoggedIn) {
+      // Redirect to home page of the current locale if not logged in
+      return NextResponse.redirect(new URL(`/${locale}`, request.url))
+    }
+  }
+  
+  return NextResponse.next()
 }
 
 export const config = {
-  matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
-  ],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 }

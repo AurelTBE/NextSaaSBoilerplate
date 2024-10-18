@@ -16,5 +16,14 @@
   "languageSelector": "Langue",
   "footer": "© 2024 SaaSify. Tous droits réservés.",
   "siteName": "SaaSify",
-  "privacy": "Politique de confidentialité"
+  "privacy": "Politique de confidentialité",
+  "application": "Application",
+  "app": {
+    "title": "Tableau de bord de l'application",
+    "welcome": "Bienvenue sur votre tableau de bord d'application.",
+    "dummyContent": "Contenu factice",
+    "feature1": "Fonctionnalité 1 : Lorem ipsum dolor sit amet",
+    "feature2": "Fonctionnalité 2 : Consectetur adipiscing elit",
+    "feature3": "Fonctionnalité 3 : Sed do eiusmod tempor incididunt"
+  }
 }

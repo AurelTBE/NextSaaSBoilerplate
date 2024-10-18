@@ -16,5 +16,14 @@
   "toggleTheme": "Toggle theme",
   "light": "Light",
   "dark": "Dark",
-  "system": "System"
+  "system": "System",
+  "application": "Application",
+  "app": {
+    "title": "Application Dashboard",
+    "welcome": "Welcome to your application dashboard.",
+    "dummyContent": "Dummy Content",
+    "feature1": "Feature 1: Lorem ipsum dolor sit amet",
+    "feature2": "Feature 2: Consectetur adipiscing elit",
+    "feature3": "Feature 3: Sed do eiusmod tempor incididunt"
+  }
 }
