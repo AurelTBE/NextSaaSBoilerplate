@@ -12,5 +12,9 @@
   "signOut": "Sign Out",
   "userMenu": "User Menu",
   "profile": "Profile",
-  "settings": "Settings"
+  "settings": "Settings",
+  "toggleTheme": "Toggle theme",
+  "light": "Light",
+  "dark": "Dark",
+  "system": "System"
 }

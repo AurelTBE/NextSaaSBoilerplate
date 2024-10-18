@@ -4,13 +4,17 @@
   "pricing": "Tarifs",
   "about": "À propos",
   "contact": "Contact",
-  "privacy": "Politique de confidentialité",
-  "languageSelector": "Langue",
-  "footer": "© 2024 SaaSify. Tous droits réservés.",
-  "siteName": "SaaSify",
   "signIn": "Se connecter",
   "signOut": "Se déconnecter",
   "userMenu": "Menu utilisateur",
   "profile": "Profil",
-  "settings": "Paramètres"
+  "settings": "Paramètres",
+  "toggleTheme": "Changer de thème",
+  "light": "Clair",
+  "dark": "Sombre",
+  "system": "Système",
+  "languageSelector": "Langue",
+  "footer": "© 2024 SaaSify. Tous droits réservés.",
+  "siteName": "SaaSify",
+  "privacy": "Politique de confidentialité"
 }
