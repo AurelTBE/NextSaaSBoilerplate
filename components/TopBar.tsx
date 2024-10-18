@@ -12,6 +12,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import Image from 'next/image'
+import iconSvg from '../app/icon.svg'
 
 const TopBar = () => {
   const { t, language } = useLanguage();
@@ -62,6 +64,7 @@ const TopBar = () => {
     <header className="bg-light-background dark:bg-dark-background shadow-sm">
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-light-primaryText dark:text-dark-primaryText">
+          <Image src={iconSvg} alt="SaaSify Logo" width={16} height={16} className="mr-4 inline-block" />
           SaaSify
         </Link>
         <div className="flex items-center space-x-4">
@@ -70,7 +73,7 @@ const TopBar = () => {
           <Link href="#about" className="text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText">{t('common.about')}</Link>
           <Link href="#contact" className="text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText">{t('common.contact')}</Link>
           {isLoggedIn && (
-            <Link href={`/${language}/app`} className="text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText font-bold py-2 px-4 rounded hover:bg-light-highlight dark:hover:bg-dark-highlight">
+            <Link href={`/${language}/app`} className="bg-vibrant-purple hover:bg-light-purple text-dark-primaryText dark:text-dark-primaryText hover:text-dark-primaryText dark:hover:text-dark-primaryText font-bold py-2 px-4 rounded hover:bg-light-highlight dark:hover:bg-dark-highlight">
               {t('common.application')}
             </Link>
           )}
@@ -94,26 +97,21 @@ const TopBar = () => {
             <div className="relative">
               <button
                 onClick={() => setShowUserMenu(!showUserMenu)}
-                className="flex items-center space-x-2 text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText"
+                className="flex items-center space-x-2 border border-light-border dark:border-dark-border p-1 rounded-md text-light-secondaryText dark:text-dark-secondaryText hover:text-light-primaryText dark:hover:text-dark-primaryText"
               >
-                <img
-                  src="/placeholder-avatar.png"
-                  alt="User avatar"
-                  className="w-8 h-8 rounded-full"
-                />
                 <span>{t('common.userMenu')}</span>
               </button>
               {showUserMenu && (
                 <div className="absolute right-0 mt-2 w-48 bg-light-background dark:bg-dark-background rounded-md shadow-lg py-1 border border-light-border dark:border-dark-border">
-                  <Link href="/profile" className="block px-4 py-2 text-sm text-light-secondaryText dark:text-dark-secondaryText hover:bg-light-accent dark:hover:bg-dark-accent hover:text-white">
+                  <Link href="/profile" className="block px-4 py-2 text-sm text-light-secondaryText dark:text-dark-secondaryText hover:bg-light-accent dark:hover:bg-dark-accent hover:bg-white">
                     {t('common.profile')}
                   </Link>
-                  <Link href="/settings" className="block px-4 py-2 text-sm text-light-secondaryText dark:text-dark-secondaryText hover:bg-light-accent dark:hover:bg-dark-accent hover:text-white">
+                  <Link href="/settings" className="block px-4 py-2 text-sm text-light-secondaryText dark:text-dark-secondaryText hover:bg-light-accent dark:hover:bg-dark-accent hover:bg-white">
                     {t('common.settings')}
                   </Link>
                   <button
                     onClick={handleLogout}
-                    className="block w-full text-left px-4 py-2 text-sm text-light-secondaryText dark:text-dark-secondaryText hover:bg-light-accent dark:hover:bg-dark-accent hover:text-white"
+                    className="block w-full text-left px-4 py-2 text-sm text-light-secondaryText dark:text-dark-secondaryText hover:bg-light-accent dark:hover:bg-dark-accent hover:bg-white"
                   >
                     {t('common.signOut')}
                   </button>

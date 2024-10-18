@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from '../contexts/LanguageContext'
 import { translations, Language } from '../locales/translations'
+import { AuthProvider } from '../contexts/AuthContext'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,17 +24,17 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function RootLayout({
   children,
-  params
 }: {
   children: React.ReactNode
-  params: { locale: Language }
 }) {
   return (
-    <html lang={params.locale}>
+    <html lang="en">
       <body className={inter.className}>
-        <LanguageProvider initialLang={params.locale}>
-          {children}
-        </LanguageProvider>
+        <AuthProvider>
+          <LanguageProvider initialLang="en">
+            {children}
+          </LanguageProvider>
+        </AuthProvider>
       </body>
     </html>
   )

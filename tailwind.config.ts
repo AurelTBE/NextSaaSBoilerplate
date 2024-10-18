@@ -16,6 +16,9 @@ const config: Config = {
   			'electric-blue': '#007BFF',
   			'neon-green': '#39FF14',
   			'vibrant-purple': '#8A2BE2',
+  			'light-blue': '#007BFF',
+  			'light-green': '#39FF14',
+  			'light-purple': '#8A2BE2',
 			  light: {
 				backgroundPrimary: '#F5F5F5',
 				backgroundSecondary: '#FFFFFF',
